@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 【1. HP主題（タイトル）】ブラウザのタブに表示されます -->
+    <title>ここにホームページのタイトルを入れる</title>
+    <style>
+        /* --- 画面全体の背景色設定 --- */
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            background-color: #e6f2ff; /* 明るいブルー（スカイブルー） */
+        }
+
+        /* --- 中央の白枠コンテンツ領域 --- */
+        .page-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff; /* コンテンツ部分の白背景 */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* 全体が浮かび上がる軽い影 */
+        }
+
+        /* --- ヘッダー（大見出しエリア）の背景画像設定 --- */
+        header {
+            text-align: center;
+            background-image: url('inochi.gif'); /* 圧縮したGIF画像 */
+            background-size: cover;          /* エリア全体に画像を敷き詰める */
+            background-position: center;     /* 画像の中央を表示 */
+            background-repeat: no-repeat;    /* 画像を繰り返さない */
+            border-radius: 8px;              /* 角を少し丸くする */
+            overflow: hidden;                /* はみ出しを防止 */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* --- 文字を読みやすくするための半透明カバー --- */
+        .header-inner {
+            background-color: rgba(255, 255, 255, 0.5); /* 白の半透明 */
+            padding: 150px 20px;             /* 上下の余白（高さの調整） */
+        }
+
+        .header-inner h1 {
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+            color: #111;
+        }
+
+        .header-inner p {
+            margin: 0;
+            color: #555;
+        }
+
+        main {
+            margin-top: 30px;
+        }
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        /* 画像が画面からはみ出さないように調整 */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 全体を囲むコンテナ -->
+    <div class="page-container">
+
+        <header>
+            <!-- 背景画像の上に乗せるコンテンツエリア -->
+            <div class="header-inner">
+                <!-- 【1. HP主題（大見出し）】ここを編集してください -->
+                <h1>いのちの水　いのちの木</h1>
+                <p>ここに簡単なキャッチコピーや説明文を入れます。</p>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>聖書　神のみ言葉の考察と黙想</h2>
+                <p>ここにお好きな文章を入力してください。</p>
+
+                <!-- 【2. 写真画像の挿入場所】 -->
+                <div class="image-container">
+                    <img src="photo.jpg" alt="写真画像の説明">
+                </div>
+
+                <p>文章の続きをここに書くことができます。</p>
+
+                <!-- 【3. GIF画像の挿入場所】 -->
+                <div class="image-container">
+                    <img src="animation.gif" alt="GIF画像の説明">
+                </div>
+            </section>
+        </main>
+
+        <!-- ★ フッターエリア（カウンターはここに入れます） ★ -->
+       <footer style="text-align: center; margin-top: 40px; color: #777; border-top: 1px solid #eee; padding-top: 20px;">
+    
+    <p style="margin-bottom: 10px;">
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=my_miasa_hp_unique_id" alt="Visitors" style="vertical-align: middle;">
+    </p>
+
+    <p style="font-size: 0.85rem; margin: 0;">&copy; 2026 Your Name</p>
+</footer>
+
+    </div>
+
+</body>
+</html>
